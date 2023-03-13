@@ -1,0 +1,6 @@
+pluginManagement {
+    repositories {
+        //... the other ones (if any exist)
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+    }
+}

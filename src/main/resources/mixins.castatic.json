@@ -1,0 +1,9 @@
+{
+"required": true,
+"compatibilityLevel": "JAVA_8"
+"package": "api.mixin.mixins"
+"refmap": "mixins.castatic.refmap.json"
+"mixins": [
+	"MixinBlockLiquid"
+]
+}
