@@ -1,4 +1,4 @@
-package api.mixin.mixins;
+package io.github.frenchntoasty.mixin.mixins;
 
 import java.util.Random;
 import org.spongepowered.asm.mixin.Mixin;
@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 public abstract class MixinBlockLiquid {
  
     @Shadow public abstract void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand);
-    
+
     @Inject(method = "updateTick", at = @At("HEAD"), cancellable = true)
     private void onUpdateTick(World worldIn, BlockPos pos, IBlockState state, Random rand, CallbackInfo ci) {
         if (state.getBlock() == Blocks.WATER && !worldIn.canBlockSeeSky(pos)) {

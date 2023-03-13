@@ -1,4 +1,4 @@
-package cas;
+package io.github.frenchntoasty.cas;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.BlockEvent;
