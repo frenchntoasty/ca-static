@@ -1,4 +1,4 @@
-package api.mixin;
+package io.github.frenchntoasty.mixin;
 
 import java.util.Map;
 
@@ -10,8 +10,6 @@ import org.spongepowered.asm.mixin.Mixins;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 public class MixinLoader implements IFMLLoadingPlugin {
-
-	
 	public MixinLoader() {
 		MixinBootstrap.init();
 		Mixins.addConfiguration("mixins.castatic.json");
